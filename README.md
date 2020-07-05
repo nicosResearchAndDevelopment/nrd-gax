@@ -1,2 +1,5 @@
-# ned-gax
+# nrd-gax
+
 GAIA-X Ontology
+
+---
