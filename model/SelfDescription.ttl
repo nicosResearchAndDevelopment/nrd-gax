@@ -1,0 +1,77 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+@prefix gax:  <https://de.wikipedia.org/wiki/GAIA-X#> .
+
+gax:Testimonial
+    a            owl:Class ;
+    rdfs:label   "Testimonial"@en ;
+    rdfs:comment ""@en ;
+.
+
+gax:Metadata
+    a            owl:Class ;
+    rdfs:label   "Metadata"@en ;
+    rdfs:comment ""@en ;
+.
+
+gax:Proof
+    a            owl:Class ;
+    rdfs:label   "Proof"@en ;
+    rdfs:comment ""@en ;
+.
+
+gax:SelfDescription
+    a            owl:Class ;
+    rdfs:label   "Self-Description"@en ;
+    rdfs:comment ""@en ;
+.
+
+gax:includes
+    a            owl:ObjectProperty ;
+    rdfs:label   "includes"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:SelfDescription ;
+    rdfs:range   gax:Testimonial ;
+.
+
+gax:describedBy
+    a            owl:ObjectProperty ;
+    rdfs:label   "describedBy"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:SelfDescription ;
+    rdfs:range   gax:Metadata ;
+.
+
+gax:provenBy
+    a            owl:ObjectProperty ;
+    rdfs:label   "provenBy"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  [ gax:Testimonial gax:SelfDescription ] ;
+    rdfs:range   gax:Proof ;
+.
+
+gax:ParticipantSelfDescription
+    a               owl:Class ;
+    rdfs:label      "Participant Self-Description"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:SelfDescription ;
+.
+
+gax:AssetSelfDescription
+    a               owl:Class ;
+    rdfs:label      "Asset Self-Description"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:SelfDescription ;
+.
+
+
+gax:NodeSelfDescription
+    a               owl:Class ;
+    rdfs:label      "Node Self-Description"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:AssetSelfDescription ;
+.
+
+### EOF

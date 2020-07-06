@@ -1,0 +1,52 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+@prefix gax:  <https://de.wikipedia.org/wiki/GAIA-X#> .
+
+
+gax:Provider
+    a          owl:Class ;
+    rdfs:label "Provider"@en ;
+    rdfs:comment
+               "A GAIA-X Provideris a registered legal entity, which operatesGaia-X nodesand/or providesGAIA-X services."@en ;
+.
+
+gax:ServiceProvider
+    a               owl:Class ;
+    rdfs:label      "ServiceProvider"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:Provider ;
+.
+
+gax:ServiceInstanceProvider
+    a               owl:Class ;
+    rdfs:label      "ServiceInstanceProvider"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:Provider ;
+.
+
+gax:NodeProvider
+    a               owl:Class ;
+    rdfs:label      "NodeProvider"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:Provider ;
+.
+
+gax:provides
+    a            owl:ObjectProperty ;
+    rdfs:label   "provides"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:NodeProvider, gax:ServiceProvider ;
+    rdfs:range   gax:Node, gax:Service ;
+.
+
+
+gax:ProviderSelfDescription
+    a               owl:Class ;
+    rdfs:label      "ProviderSelfDescription"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:SelfDescription ;
+.
+
+###

@@ -1,0 +1,39 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+@prefix gax:  <https://de.wikipedia.org/wiki/GAIA-X#> .
+
+
+## TODO: here we have to decide: how we want to describe Services, TOSCA?!?
+## <http://docs.oasis-open.org/tosca/TOSCA/v1.0/os/TOSCA-v1.0-os.html>
+
+gax:Service
+    a          owl:Class ;
+    rdfs:label "Service"@en ;
+    rdfs:comment
+               "A GAIA-X Service is an offering, which can be subscribed/ordered/consumed by a registered GAIA-X consumer."@en ;
+.
+
+gax:ServiceSelfDescription
+    a               owl:Class ;
+    rdfs:label      "ServiceSelfDescription"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:AssetSelfDescription ;
+.
+
+gax:ServiceInstance
+    a               owl:Class ;
+    rdfs:label      "ServiceInstance"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:AssetSelfDescription ;
+.
+
+gax:ServiceInstanceSelfDescription
+    a               owl:Class ;
+    rdfs:label      "ServiceInstanceSelfDescription"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:AssetSelfDescription ;
+.
+
+###

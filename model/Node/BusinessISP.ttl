@@ -1,0 +1,23 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+@prefix gax:  <https://de.wikipedia.org/wiki/GAIA-X#> .
+
+gax:NodeBusinessISP
+    a            owl:Class ;
+    rdfs:label   "Business ISP"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gbx:Node ;
+.
+
+
+gax:ASnumber
+    a            owl:DatatypeProperty ;
+    rdfs:domain  gax:NodeBusinessISP ;
+    rdfs:range   xsd:string ;
+    rdfs:label   "ASnumber"@en ;
+    rdfs:comment "The primary AS number of the ISP."@en ;
+.
+
+### EOF

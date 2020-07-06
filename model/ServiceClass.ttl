@@ -1,0 +1,38 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+@prefix gax:  <https://de.wikipedia.org/wiki/GAIA-X#> .
+
+
+gax:ServiceClass
+    a            owl:Class ;
+##abstract
+    rdfs:label   "Service"@en ;
+    rdfs:comment "Service Classes do present the depth of a GAIA-X service regarding the integration level."@en ;
+.
+
+gax:StandardServiceClass
+    a               owl:Class ;
+    rdfs:label      "StandardServiceClass"@en ;
+    rdfs:comment
+                    "A Standard Service is a registered Service, which is provided by at least one Provider. This Service is general available to GAIA-X consumers. A Standard Service is QA auto-tested (blackbox-testing, smoke test)."@en ;
+    rdfs:subClassOf gax:ServiceClass ;
+.
+
+
+#Services, which do have a standardized interface, aligned by the „Standardization Body Entity“ according to a reference implementation and the existing, used Standard Services.
+#   -Standardized API and documentation
+#   -Provider can be certified against this service class.
+#   -Guaranteed availability
+#   -Auto-tested Services (QA, White-box testing, functional testing)
+
+gax:PremiumServiceClass
+    a               owl:Class ;
+    rdfs:label      "PremiumServiceClass"@en ;
+    rdfs:comment
+                    "Services, which do have a standardized interface, aligned by the „Standardization Body Entity“ according to a reference implementation and the existing, used Standard Services."@en ;
+    rdfs:subClassOf gax:ServiceClass ;
+.
+
+###

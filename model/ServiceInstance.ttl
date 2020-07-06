@@ -1,0 +1,38 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+@prefix gax:  <https://de.wikipedia.org/wiki/GAIA-X#> .
+
+
+gax:ServiceInstance
+    a          owl:Class ;
+    rdfs:label "ServiceInstance"@en ;
+    rdfs:comment
+               "A GAIA-X Service Instance is the run-time realization of a GAIA-X Service on Gaia-X Nodes where GAIA-X Services are consumed by a GAIA-X Consumer."@en ;
+.
+
+gax:instantiates
+    a            owl:ObjectProperty ;
+    rdfs:label   "instantiates"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:ServiceInstance ;
+    rdfs:range   gax:Service ;
+.
+
+gax:hosts
+    a            owl:ObjectProperty ;
+    rdfs:label   "hosts"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:ServiceInstance ;
+    rdfs:range   gax:Node ;
+.
+
+gax:ServiceInstanceSelfDescription
+    a               owl:Class ;
+    rdfs:label      "ServiceInstanceSelfDescription"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:AssetSelfDescription ;
+.
+
+###

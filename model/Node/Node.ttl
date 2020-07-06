@@ -1,0 +1,38 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+@prefix gax:  <https://de.wikipedia.org/wiki/GAIA-X#> .
+
+
+gax:Node
+    a          owl:Class ;
+    rdfs:label "Node"@en ;
+    rdfs:comment
+               "A Gaia-X Node is the environment where a Gaia-X Provider provides Gaia-X service instances to Gaia-X consumers."@en ;
+.
+
+gax:hasCertificate
+    a            owl:ObjectProperty ;
+    rdfs:label   "hasCertificate"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:Node ;
+## TODO: rdfs:range   gax:* ;
+.
+
+gax:NodeSelfDescription
+    a               owl:Class ;
+    rdfs:label      "NodeSelfDescription"@en ;
+    rdfs:comment    ""@en ;
+    rdfs:subClassOf gax:AssetSelfDescription ;
+.
+
+gax:businessISP
+    a            owl:ObjectProperty ;
+    rdfs:label   "Business ISP"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gbx:Node ;
+    rdfs:range   gax:NodeBusinessISP ;
+.
+
+###
