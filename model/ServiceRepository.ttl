@@ -11,4 +11,4 @@ gax:ServiceRepository
     rdfs:comment "Logical directory/catalogue containing all available GAIA-X services."@en ;
 .
 
-###
+### EOF

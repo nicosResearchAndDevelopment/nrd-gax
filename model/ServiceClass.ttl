@@ -35,4 +35,4 @@ gax:PremiumServiceClass
     rdfs:subClassOf gax:ServiceClass ;
 .
 
-###
+### EOF
