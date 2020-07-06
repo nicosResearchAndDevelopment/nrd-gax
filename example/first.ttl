@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ldp:  <http://ldp> .
+@prefix gax:  <https://de.wikipedia.org/wiki/GAIA-X#> .
+@prefix self: <http://gbx.nicos-rd.com/> .
+
+#########################
+
+### EOF

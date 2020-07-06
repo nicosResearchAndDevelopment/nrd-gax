@@ -17,18 +17,18 @@
 
 gax:
     a                             voaf:Vocabulary, owl:Ontology ;
-    rdfs:isDefinedBy              <https://github.com/nicosResearchAndDevelopment/nrd-di/> ;
+    rdfs:isDefinedBy              <https://github.com/nicosResearchAndDevelopment/nrd-gax/> ;
     rdfs:label                    "Device Integration"@en ;
     dct:title                     "Device Integration Information Model"@en ;
     rdfs:comment                  "" ;
     cc:license                    <http://www.apache.org/licenses/LICENSE-2.0> ;
     dct:creator                   <https://github.com/jlangkau>, <https://github.com/sebbader> ;
 # dct:publisher                  ;
-    dct:created                   "2020-06-24"^^xsd:date ;
-    dct:modified                  "2020-06-24"^^xsd:date ;
+    dct:created                   "2020-07-06"^^xsd:date ;
+    dct:modified                  "2020-07-06"^^xsd:date ;
     owl:versionInfo               "0.0.1" ;
-    owl:versionIRI                "https://github.com/nicosResearchAndDevelopment/nrd-di/0.0.1>" ;
-    vann:preferredNamespaceUri    "https://github.com/nicosResearchAndDevelopment/nrd-di/" ;
+    owl:versionIRI                "https://github.com/nicosResearchAndDevelopment/nrd-gax/0.0.1>" ;
+    vann:preferredNamespaceUri    "https://github.com/nicosResearchAndDevelopment/nrd-gax/" ;
     vann:preferredNamespacePrefix "gax" ;
     rdfs:seeAlso                  <https://de.wikipedia.org/wiki/GAIA-X#> ;
     rdfs:seeAlso                  <https://www.bmwi.de/Redaktion/EN/Publikationen/gaia-x-technical-architecture.pdf> ;
@@ -53,10 +53,11 @@ gax:
 # Imports of class files
 
 gax:
-    owl:imports <model/DataAsset.ttl> ;
-## Node
+
+## ./Node
     owl:imports <model/Node/Node.ttl> ;
     owl:imports <model/Node/BusinessISP.ttl> ;
+##
     owl:imports <model/Provider.ttl> ;
     owl:imports <model/SelfDescription.ttl> ;
     owl:imports <model/Service.ttl> ;
