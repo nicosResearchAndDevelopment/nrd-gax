@@ -11,6 +11,7 @@ gax:NodeBusinessISP
     rdfs:label   "Business ISP"@en ;
     rdfs:comment ""@en ;
     rdfs:domain  gax:Node ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 
@@ -20,6 +21,7 @@ gax:ASnumber
     rdfs:range   xsd:string ;
     rdfs:label   "ASnumber"@en ;
     rdfs:comment "The primary AS number of the ISP."@en ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 ### EOF

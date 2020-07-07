@@ -9,6 +9,7 @@ gax:ServiceRepository
     a            owl:Class ;
     rdfs:label   "ServiceRepository"@en ;
     rdfs:comment "Logical directory/catalogue containing all available GAIA-X services."@en ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 ### EOF

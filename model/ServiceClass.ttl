@@ -10,6 +10,7 @@ gax:ServiceClass
 ##abstract
     rdfs:label   "Service"@en ;
     rdfs:comment "Service Classes do present the depth of a GAIA-X service regarding the integration level."@en ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 gax:StandardServiceClass
@@ -18,6 +19,7 @@ gax:StandardServiceClass
     rdfs:comment
                     "A Standard Service is a registered Service, which is provided by at least one Provider. This Service is general available to GAIA-X consumers. A Standard Service is QA auto-tested (blackbox-testing, smoke test)."@en ;
     rdfs:subClassOf gax:ServiceClass ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 
@@ -33,6 +35,7 @@ gax:PremiumServiceClass
     rdfs:comment
                     "Services, which do have a standardized interface, aligned by the „Standardization Body Entity“ according to a reference implementation and the existing, used Standard Services."@en ;
     rdfs:subClassOf gax:ServiceClass ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 ### EOF

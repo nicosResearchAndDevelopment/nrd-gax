@@ -10,6 +10,7 @@ gax:ServiceInstance
     rdfs:label "ServiceInstance"@en ;
     rdfs:comment
                "A GAIA-X Service Instance is the run-time realization of a GAIA-X Service on Gaia-X Nodes where GAIA-X Services are consumed by a GAIA-X Consumer."@en ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 gax:instantiates
@@ -18,6 +19,7 @@ gax:instantiates
     rdfs:comment ""@en ;
     rdfs:domain  gax:ServiceInstance ;
     rdfs:range   gax:Service ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 gax:hosts
@@ -26,6 +28,7 @@ gax:hosts
     rdfs:comment ""@en ;
     rdfs:domain  gax:ServiceInstance ;
     rdfs:range   gax:Node ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 gax:ServiceInstanceSelfDescription
@@ -33,6 +36,7 @@ gax:ServiceInstanceSelfDescription
     rdfs:label      "ServiceInstanceSelfDescription"@en ;
     rdfs:comment    ""@en ;
     rdfs:subClassOf gax:AssetSelfDescription ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 ### EOF

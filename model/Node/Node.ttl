@@ -10,6 +10,7 @@ gax:Node
     rdfs:label "Node"@en ;
     rdfs:comment
                "A Gaia-X Node is the environment where a Gaia-X Provider provides Gaia-X service instances to Gaia-X consumers."@en ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 gax:hasCertificate
@@ -18,6 +19,7 @@ gax:hasCertificate
     rdfs:comment ""@en ;
     rdfs:domain  gax:Node ;
 ## TODO: rdfs:range   gax:* ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 gax:NodeSelfDescription
@@ -25,6 +27,7 @@ gax:NodeSelfDescription
     rdfs:label      "NodeSelfDescription"@en ;
     rdfs:comment    ""@en ;
     rdfs:subClassOf gax:AssetSelfDescription ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 gax:businessISP
@@ -33,6 +36,7 @@ gax:businessISP
     rdfs:comment ""@en ;
     rdfs:domain  gbx:Node ;
     rdfs:range   gax:NodeBusinessISP ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 ### EOF

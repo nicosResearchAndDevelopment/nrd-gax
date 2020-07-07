@@ -13,6 +13,7 @@ gax:Service
     rdfs:label "Service"@en ;
     rdfs:comment
                "A GAIA-X Service is an offering, which can be subscribed/ordered/consumed by a registered GAIA-X consumer."@en ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 gax:ServiceSelfDescription
@@ -20,6 +21,7 @@ gax:ServiceSelfDescription
     rdfs:label      "ServiceSelfDescription"@en ;
     rdfs:comment    ""@en ;
     rdfs:subClassOf gax:AssetSelfDescription ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 gax:ServiceInstance
@@ -27,6 +29,7 @@ gax:ServiceInstance
     rdfs:label      "ServiceInstance"@en ;
     rdfs:comment    ""@en ;
     rdfs:subClassOf gax:AssetSelfDescription ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 gax:ServiceInstanceSelfDescription
@@ -34,6 +37,7 @@ gax:ServiceInstanceSelfDescription
     rdfs:label      "ServiceInstanceSelfDescription"@en ;
     rdfs:comment    ""@en ;
     rdfs:subClassOf gax:AssetSelfDescription ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
 ### EOF
