@@ -25,7 +25,7 @@ gax:
     dct:creator                   <https://github.com/jlangkau>, <https://github.com/sebbader> ;
 # dct:publisher                  ;
     dct:created                   "2020-07-06"^^xsd:date ;
-    dct:modified                  "2020-07-06"^^xsd:date ;
+    dct:modified                  "2020-07-10"^^xsd:date ;
     owl:versionInfo               "0.0.1" ;
     owl:versionIRI                "https://github.com/nicosResearchAndDevelopment/nrd-gax/0.0.1>" ;
     vann:preferredNamespaceUri    "https://github.com/nicosResearchAndDevelopment/nrd-gax/" ;
@@ -47,6 +47,11 @@ gax:
 <https://github.com/jlangkau>
     a         dct:Agent, foaf:Person ;
     foaf:name "Jörg langkau" ;
+.
+
+<https://github.com/clange>
+    a         dct:Agent, foaf:Person ;
+    foaf:name "Christoph Lange" ;
 .
 
 # ----------------------------
