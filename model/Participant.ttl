@@ -4,12 +4,60 @@
 
 @prefix gax:  <https://de.wikipedia.org/wiki/GAIA-X#> .
 
+gax:Participant
+    a          owl:Class ;
+    rdfs:label "Participant"@en ;
+    rdfs:comment ""@en ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
+.
+
+gax:ServiceConsumer
+    a          owl:Class ;
+    rdfs:label "Service Consumer"@en ;
+    rdfs:comment
+               ""@en ;
+	rdfs:subClassOf gax:Participant ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
+.
+
+gax:controls
+    a            owl:ObjectProperty ;
+    rdfs:label   "controls"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:ServiceConsumer ;
+    rdfs:range   gax:Service, gax:ExternalClient ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
+.
+
+gax:DataOwner
+    a          owl:Class ;
+    rdfs:label "Data Owner"@en ;
+    rdfs:comment
+               ""@en ;
+	rdfs:subClassOf gax:Participant ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
+.
+
+gax:makesAvailable
+    a            owl:ObjectProperty ;
+    rdfs:label   "makesAvailable"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:DataOwner ;
+    rdfs:range   gax:DataAsset ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
+.
+
+
+####################
+## Provider
+####################
 
 gax:Provider
     a          owl:Class ;
     rdfs:label "Provider"@en ;
     rdfs:comment
                "A GAIA-X Provideris a registered legal entity, which operatesGaia-X nodesand/or providesGAIA-X services."@en ;
+	rdfs:subClassOf gax:Participant ;
 	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
@@ -36,6 +84,8 @@ gax:NodeProvider
     rdfs:subClassOf gax:Provider ;
 	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
+
+## TODO: reveresed by 'gax:Node.providedBy'?
 
 gax:provides
     a            owl:ObjectProperty ;

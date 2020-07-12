@@ -16,6 +16,15 @@ gax:Service
 	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
+gax:consumes
+    a            owl:ObjectProperty ;
+    rdfs:label   "consumes"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:Service ; # AND gax:ExternalClient ???
+    rdfs:range   gax:Service, gax:ExternalClient ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
+.
+
 gax:ServiceSelfDescription
     a               owl:Class ;
     rdfs:label      "ServiceSelfDescription"@en ;

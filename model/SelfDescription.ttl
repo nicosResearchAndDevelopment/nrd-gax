@@ -29,6 +29,7 @@ gax:SelfDescription
     a            owl:Class ;
     rdfs:label   "Self-Description"@en ;
     rdfs:comment ""@en ;
+	rdfs:subClassOf gax:Asset ;
 	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 

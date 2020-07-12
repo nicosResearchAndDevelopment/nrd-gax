@@ -2,6 +2,8 @@
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+@prefix gax-ta <https://www.bmwi.de/Redaktion/EN/Publikationen/gaia-x-technical-architecture.pdf?__blob=publicationFile&v=6>
+
 @prefix gax:  <https://de.wikipedia.org/wiki/GAIA-X#> .
 
 
@@ -10,6 +12,16 @@ gax:Node
     rdfs:label "Node"@en ;
     rdfs:comment
                "A Gaia-X Node is the environment where a Gaia-X Provider provides Gaia-X service instances to Gaia-X consumers."@en ;
+	rdfs:subClassOf gax:Asset ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
+.
+
+gax:hosts
+    a            owl:ObjectProperty ;
+    rdfs:label   "hosts"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:DataAsset ;
+	rdfs:range   gax:NodeProvider ;
 	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 
@@ -19,6 +31,19 @@ gax:hasCertificate
     rdfs:comment ""@en ;
     rdfs:domain  gax:Node ;
 ## TODO: rdfs:range   gax:* ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
+.
+
+## TODO: reveresed by 'gax:NodeProvider.provides'?
+## TODO: is there an error on gax-ta, p11 <<node>> --providedBy--> "
+<<HW Node>> ?
+## 
+gax:providedBy
+    a            owl:ObjectProperty ;
+    rdfs:label   "providedBy"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:Node ;
+	rdfs:range   gax:NodeProvider ;
 	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
 .
 

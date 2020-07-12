@@ -1,0 +1,35 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix gax-ta <https://www.bmwi.de/Redaktion/EN/Publikationen/gaia-x-technical-architecture.pdf?__blob=publicationFile&v=6>
+
+@prefix gax:  <https://de.wikipedia.org/wiki/GAIA-X#> .
+
+
+gax:Certificate
+    a          owl:Class ;
+    rdfs:label "Certificate"@en ;
+    rdfs:comment
+               ""@en ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
+.
+
+gax:issuedBy
+    a            owl:ObjectProperty ;
+    rdfs:label   "issuedBy"@en ;
+    rdfs:comment ""@en ;
+    rdfs:domain  gax:Certificate ;
+	rdfs:range   gax:Auditor ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
+.
+
+gax:Auditor
+    a          owl:Class ;
+    rdfs:label "Auditor"@en ;
+    rdfs:comment
+               ""@en ;
+	rdfs:isDefinedBy <https://de.wikipedia.org/wiki/GAIA-X#> ;
+.
+
+### EOF
